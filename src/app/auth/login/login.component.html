@@ -1,0 +1,20 @@
+<form class="form-signin" [formGroup]="loginForm" style="margin-top: 200px;">
+    <div class="text-center mb-4">
+        <div class="control-group normal_text"> <h3><img src="assets/img/logo.png" alt="Logo" /></h3></div>
+        <h1 class="h3 mb-3 font-weight-normal">{{ title }}</h1>
+    </div>
+
+    <div class="form-label-group">
+        <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="email">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Password</label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+    <a [routerLink]="['/admin/logout']" >Sign up</a>
+</form>
